@@ -557,6 +557,18 @@ ul {
     color: white;
     padding: 10px;
 }
+.projects .container > a {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: var(--secondary-color);
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* end projects  */
 /* start contact */
 .contact .special-heading span:nth-child(1) {
