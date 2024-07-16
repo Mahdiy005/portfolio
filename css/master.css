@@ -603,16 +603,14 @@ ul {
 }
 .contact .contact-content form {
     flex: 1px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     margin-bottom: 25px;
-
 }
 .contact .contact-content form .in {
     width: 100%;
     display: block;
     padding: 10px 15px;
     margin-bottom: 20px;
-
 }
 .contact .contact-content form textarea {
     height: 200px;
