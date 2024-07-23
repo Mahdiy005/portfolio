@@ -159,6 +159,15 @@ ul {
     width: 100%;
 }
 
+.header .pregress {
+    /* width: 30%; */
+    position: fixed;
+    display: block;
+    height: 4px;
+    background: gray;
+    top: 100%;
+    left: 0;
+}
 @media (min-width: 768px) {
     .header .container nav .icon {
         display: none;
