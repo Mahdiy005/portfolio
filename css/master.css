@@ -302,7 +302,7 @@ ul {
 .home .container img {
     width: 450px;
     /* height: 600px; */
-   border-radius: 14%;
+    border-radius: 14%;
     -webkit-border-radius: 14%;
     -moz-border-radius: 14%;
     -ms-border-radius: 14%;
@@ -311,9 +311,9 @@ ul {
 
 @media (max-width: 992px) {
     .home .container {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
     .home .container img {
@@ -336,6 +336,18 @@ ul {
 
     .home .container .text .about-more {
         margin: 10px auto;
+    }
+
+    .home {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 767px) {
+    .home .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -456,15 +468,18 @@ ul {
     border-radius: 12px;
     transition: all 0.3s ease;
 }
+
 .skills .skills-content .box:hover {
     box-shadow: 1px 1px 7px white;
 }
+
 .skills .skills-content .box i {
     font-size: 45px;
     display: inline-block;
     padding-bottom: 27px;
 
 }
+
 .skills .skills-content .box p {
     font-weight: bold;
 }
@@ -477,23 +492,28 @@ ul {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
 }
+
 .edu .special-heading span:first-of-type {
     color: var(--main-color);
 }
-.edu .container > p {
+
+.edu .container>p {
     text-align: center;
     color: var(--main-color);
     margin-top: -50px;
 }
+
 .edu .card {
     display: flex;
     justify-content: space-between;
     background-color: #ccc;
     margin-top: 90px;
 }
+
 .edu .card img {
     width: 22%;
 }
+
 .edu .card .info {
     flex: 1;
     padding: 20px;
@@ -502,23 +522,28 @@ ul {
     justify-content: space-between;
     /* align-content: space-between; */
 }
+
 .edu .card .info h4 {
     color: var(--main-color);
     font-weight: 800;
 }
-.edu .card .info p:first-of-type{
+
+.edu .card .info p:first-of-type {
     font-size: 14px;
     color: var(--main-color);
 }
+
 .edu .card .info p:nth-of-type(2) {
     font-size: 14px;
     color: var(--secondary-color);
     text-decoration: wavy;
 }
-.edu .card .info p:last-of-type{
+
+.edu .card .info p:last-of-type {
     color: red;
     font-weight: bold;
 }
+
 /* end education */
 /* start projects  */
 .projects {
@@ -526,26 +551,32 @@ ul {
     padding-bottom: var(--padding-section);
     background-color: var(--main-color);
 }
+
 .projects .project-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .projects .project-content .card {
     box-shadow: 0px 0px 4px var(--secondary-color);
     position: relative;
 }
+
 .projects .project-content .card img {
     width: 100%;
 }
+
 .projects .project-content .card h3 {
     margin: 10px 0;
 }
+
 .projects .project-content .card p {
     line-height: 2;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
+
 .projects .project-content .card a {
     text-decoration: none;
     color: var(--main-color);
@@ -555,12 +586,14 @@ ul {
     /* margin-top: 20px; */
     display: inline-block;
 }
+
 .projects .project-content .card .text {
     color: white;
     padding: 10px;
 
 }
-.projects .container > a {
+
+.projects .container>a {
     display: block;
     margin: 30px auto;
     text-align: center;
@@ -572,27 +605,33 @@ ul {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .projects .project-content .card .text .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .projects .project-content .card .text .row span {
     color: #777;
     font-size: 15px;
 }
+
 /* end projects  */
 /* start contact */
 .contact .special-heading span:nth-child(1) {
     color: var(--main-color);
 }
+
 .contact-content .special-heading span:last-child {
     color: var(--secondary-color);
 }
+
 .contact {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
 }
+
 .contact .contact-content {
     display: flex;
     justify-content: space-between;
@@ -601,20 +640,24 @@ ul {
     padding: 20px;
     flex-wrap: wrap;
 }
+
 .contact .contact-content form {
     flex: 1px;
     /* margin-left: 25px; */
     margin-bottom: 25px;
 }
+
 .contact .contact-content form .in {
     width: 100%;
     display: block;
     padding: 10px 15px;
     margin-bottom: 20px;
 }
+
 .contact .contact-content form textarea {
     height: 200px;
 }
+
 .contact .contact-content form input:last-child {
     padding: 7px 20px;
     background: var(--secondary-color);
@@ -622,40 +665,49 @@ ul {
     color: white;
     border-radius: 5px;
 }
+
 @media (max-width: 767px) {
     .contact .contact-content {
         flex-direction: column;
     }
+
     .contact .contact-content img {
         width: 100%;
     }
+
     .contact .contact-content form {
         margin-top: 20px;
     }
 }
+
 /* end contact */
 /* start footer  */
 footer {
     padding-top: calc(var(--padding-section) / 2);
     background-color: #222;
 }
+
 footer .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill ,minmax(310px ,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 20px;
     color: white;
     margin-bottom: 50px;
 }
-footer .row  h3{
+
+footer .row h3 {
     margin-bottom: 25px;
 }
+
 footer .row .left p:first-of-type {
     line-height: 2;
     margin-bottom: 10px;
 }
+
 footer .row .left p:last-of-type {
     line-height: 2;
 }
+
 footer .row .middle ul a {
     text-decoration: none;
     color: white;
@@ -669,6 +721,7 @@ footer .row .middle ul a {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+
 footer .row .middle ul a::before {
     font-family: 'Font Awesome 5 Free';
     content: '\f138';
@@ -682,21 +735,26 @@ footer .row .middle ul a::before {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
 footer .row .middle ul li:hover a {
     color: var(--secondary-color);
 }
+
 footer .row .right .social {
     color: white;
     font-size: 22px;
 }
+
 footer .row .right .social i {
     color: white;
     margin-left: 20px;
     font-size: 30px;
 }
-footer .tail  {
+
+footer .tail {
     text-align: center;
     color: white;
     padding-bottom: 10px;
- }
+}
+
 /* end footer  */
