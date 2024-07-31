@@ -69,7 +69,7 @@ body {
     font-family: "Open Sans", sans-serif;
     /* background-color: #333; */
     /* font-family: "Coming Soon", cursive;  --> for logo */
-    background-color: #ecf0f3;
+    /* background-color: #ecf0f3; */
 }
 
 html {
@@ -391,6 +391,7 @@ ul {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
     background-color: white;
+    background-color: #ecf0f3;
 }
 
 .aboutme .about-content {
@@ -669,7 +670,7 @@ ul {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2); */
     padding: 20px;
     flex-wrap: wrap;
 }
